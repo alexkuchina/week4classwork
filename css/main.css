@@ -1,0 +1,43 @@
+body {
+    text-align: center;
+}
+
+/*adding style to all divs with a class box*/
+.box {
+    display: inline-block;
+    height: 200px;
+    width: 20%;
+}
+
+/*styling each div separately by using second class names */
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.lightgrey {
+    background-color: lightgrey;
+}
+
+.pink {
+    background-color: pink;
+}
+
+/* when the screen is 600px or smaller -two boxes in the middle will disappear*/
+@media (max-width:600px) {
+    
+    .lightgreen, .lightgrey {
+        display: none;
+    }
+}
+
+/*when the screen is 1000px and wider the boxes will expand to a 100%*/
+@media (min-width:1000px) {
+    .box {
+        width: 100%;
+    }
+}
